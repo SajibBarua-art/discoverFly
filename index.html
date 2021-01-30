@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <button onclick="bookConfiguration()" class="btn btn-style">Book Now</button>
+            <button onclick="bookConfiguration()" class="btn mb-5 btn-style">Book Now</button>
             <p id="configurationMessage"></p>
         </div>
         
@@ -166,6 +166,9 @@
                 let message = confirm("Are you want to confirm the booking?");
                 if(message){
                     text = "Your ticket booking is successful!";
+                    // To first class and economy class value empty
+                    document.getElementById("firstClassTickets").value = '0';
+                    document.getElementById('economyClassTickets').value = '0';
                 } else {
                     text = "Your ticket booking is canceled!";
                 }

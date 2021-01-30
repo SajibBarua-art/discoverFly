@@ -134,6 +134,6 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
-#configurationMessage {
-    margin-bottom: 5px;
+.mb-5 {
+    margin-bottom: 15px;
 }
